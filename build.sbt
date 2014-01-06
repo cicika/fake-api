@@ -23,6 +23,7 @@ libraryDependencies ++= {
         "com.typesafe.akka" %% "akka-remote" % "2.2.3" % "compile",
         "com.typesafe.akka" %% "akka-kernel" % "2.2.3" % "compile",
         "com.typesafe.akka" %% "akka-slf4j" % "2.2.3" % "compile",
+        "io.spray" % "spray-http" % "1.2.0" % "compile",
         "io.spray" % "spray-routing" % "1.2.0" % "compile",
         "io.spray" % "spray-can" % "1.2.0" % "compile",
         "io.spray" % "spray-util" % "1.2.0" % "compile"
@@ -43,10 +44,6 @@ publishMavenStyle := true
 
 resolvers ++= {
 	Seq(
-		"GroundLink Nexus Releases" at "http://10.55.53.4:8080/nexus/content/repositories/releases",
-        "GroundLink Nexus Snapshots" at "http://10.55.53.4:8080/nexus/content/repositories/snapshots",
-        "GroundLink Nexus Public" at "http://10.55.53.4:8080/nexus/content/groups/public/",
-        "GroundLink Nexus Third-party" at "http://10.55.53.4:8080/nexus/content/repositories/thirdparty",
 		"Local Maven" at "file://" + Path.userHome.absolutePath + "/.m2/repo",
         "Local Ivy" at "file://" + Path.userHome.absolutePath + "/.ivy2/local",
 		"Akka Releases" at "http://akka.io/repository",
