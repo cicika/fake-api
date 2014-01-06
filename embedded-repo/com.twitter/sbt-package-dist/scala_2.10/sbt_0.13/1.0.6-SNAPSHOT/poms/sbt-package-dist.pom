@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.twitter</groupId>
+    <artifactId>sbt-package-dist</artifactId>
+    <packaging>jar</packaging>
+    <description>sbt-package-dist</description>
+    <version>1.0.6-SNAPSHOT</version>
+    <name>sbt-package-dist</name>
+    <organization>
+        <name>com.twitter</name>
+    </organization>
+    <properties>
+        <sbtVersion>0.13</sbtVersion>
+        <scalaVersion>2.10</scalaVersion>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>2.10.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-sbt</groupId>
+            <artifactId>sbt</artifactId>
+            <version>0.13.0-20130121-052133</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.markdownj</groupId>
+            <artifactId>markdownj</artifactId>
+            <version>0.3.0-1.0.2b4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+            <version>2.3.16</version>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-reflect</artifactId>
+            <version>2.10.0</version>
+        </dependency>
+    </dependencies>
+    <repositories>
+        <repository>
+            <id>SonatypeOSSSnapshots</id>
+            <name>Sonatype OSS Snapshots</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+            <layout>default</layout>
+        </repository>
+        <repository>
+            <id>SonatypeOSSReleases</id>
+            <name>Sonatype OSS Releases</name>
+            <url>https://oss.sonatype.org/content/repositories/releases/</url>
+            <layout>default</layout>
+        </repository>
+        <repository>
+            <id>typesafesnapshots</id>
+            <name>typesafe snapshots</name>
+            <url>http://repo.typesafe.com/typesafe/snapshots/</url>
+            <layout>default</layout>
+        </repository>
+        <repository>
+            <id>GroundLinkNexusReleases</id>
+            <name>GroundLink Nexus Releases</name>
+            <url>http://deployer.tech.towncar.us:8080/nexus/content/repositories/releases/</url>
+            <layout>default</layout>
+        </repository>
+        <repository>
+            <id>GroundLinkNexusSnapshots</id>
+            <name>GroundLink Nexus Snapshots</name>
+            <url>http://deployer.tech.towncar.us:8080/nexus/content/repositories/snapshots/</url>
+            <layout>default</layout>
+        </repository>
+        <repository>
+            <id>GroundLinkNexusPublic</id>
+            <name>GroundLink Nexus Public</name>
+            <url>http://deployer.tech.towncar.us:8080/nexus/content/groups/public/</url>
+            <layout>default</layout>
+        </repository>
+        <repository>
+            <id>GroundLinkNexusThirdparty</id>
+            <name>GroundLink Nexus Third-party</name>
+            <url>http://deployer.tech.towncar.us:8080/nexus/content/repositories/thirdparty/</url>
+            <layout>default</layout>
+        </repository>
+        <repository>
+            <id>SonatypeScalatools</id>
+            <name>Sonatype Scala-tools</name>
+            <url>https://oss.sonatype.org/content/groups/scala-tools/</url>
+            <layout>default</layout>
+        </repository>
+        <repository>
+            <id>SonatypeScalatoolsSnapshots</id>
+            <name>Sonatype Scala-tools Snapshots</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+            <layout>default</layout>
+        </repository>
+    </repositories>
+</project>
